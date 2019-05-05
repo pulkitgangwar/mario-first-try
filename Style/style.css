@@ -1,0 +1,54 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+.sky,
+.grass,
+.road {
+  position: relative;
+}
+.sky {
+  background-color: lightblue;
+  height: 40%;
+}
+.grass {
+  background-color: green;
+  height: 30%;
+}
+.road {
+  height: 30%;
+  background-color: dimgrey;
+  border-top: 10px solid grey;
+  border-bottom: 10px solid grey;
+  width: 100%;
+}
+.lines {
+  box-sizing: border-box;
+  border: 5px dashed #fff;
+  height: 0px;
+  width: 100%;
+  position: absolute;
+  top: 45%;
+}
+.biker {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  bottom: 10px;
+  animation-name: myanimation;
+  animation-duration: 4s;
+  
+  animation-timing-function: linear;
+  
+}
+@keyframes myanimation {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(1500px);
+  }
+}
